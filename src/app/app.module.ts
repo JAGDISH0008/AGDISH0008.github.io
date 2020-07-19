@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { FactsComponent } from './facts/facts.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResumeComponent } from './resume/resume.component';
     AboutComponent,
     FactsComponent,
     SkillsComponent,
-    ResumeComponent
+    ResumeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
