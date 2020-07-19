@@ -8,7 +8,7 @@ import { NavService } from '../service/nav.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  activeEl = 'intro'
+  activeEl = 'home'
   constructor(private navService: NavService, private router: Router) {
     const currentPath = window.location.pathname.split('/')[1]
     if (currentPath !== '') {
@@ -28,5 +28,12 @@ export class HeaderComponent {
       this.navService.scroll(id)
       this.navService.target.next(null)
     }
+  }
+  navigateTo(path: string) {
+    this.activeEl = 'project';
+    this.navService.scroll(path);
+    this.router.navigate([path]);
+    
+    this.navService.target.next(null)
   }
 }
