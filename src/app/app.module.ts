@@ -10,6 +10,8 @@ import { HeroComponent } from './hero/hero.component';
 import { NavService } from './service/nav.service';
 import { AboutComponent } from './about/about.component';
 import { FactsComponent } from './facts/facts.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FactsComponent } from './facts/facts.component';
     ProjectsComponent,
     HeroComponent,
     AboutComponent,
-    FactsComponent
+    FactsComponent,
+    SkillsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
