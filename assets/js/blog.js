@@ -13,7 +13,7 @@ $(function () {
                 var src = item["thumbnail"]; // use thumbnail url
                 // display += `<img src="${src}" class="img-fluid" alt="Cover image" style="height:100px;>`;
                 display += `<div class="card-body">`;
-                display += `<h4 class="card-title resume-item"><b>${item.title}</b></h4>`;
+                display += `<h4 class="card-title resume-item">${item.title}</h4>`;
                 display += `<p class="card-text">...</p>`;
                 display += `<a href="${item.link}" target="_blank" class="btn btn-outline-primary" >Read More</a>`;
                 display += '</div></div></div><br><br>';
