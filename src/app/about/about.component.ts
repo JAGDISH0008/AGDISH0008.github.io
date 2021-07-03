@@ -6,8 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  year = (new Date()).getFullYear();
+  month = (new Date()).getMonth();
+  day = (new Date()).getDay();
+  age = 0;
 
-  constructor() { }
+  constructor() {
+    this.calAge();
+    console.log(this.age);
+
+  }
+  calAge() {
+    this.age = (this.year - 1997) +
+      ((this.month - 5) > 0 ? 1 : 0)
+  }
 
   ngOnInit(): void {
   }
